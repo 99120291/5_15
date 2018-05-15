@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script type="text/x-handlbars-template" id="tmp">
+        <header>
+            {{#each head}}
+            <span>{{this}}</span> {{/each}}
+        </header>
+        <main>
+            <h3>2018通讯录</h3>
+
+            <ul>
+
+                <li>
+                    {{#each nav}}
+                    <span>{{this}}</span> {{/each}}
+                </li>
+                {{#each main}}
+                <li>
+                    <span>{{addIndex @index}}</span>
+                    <span>{{name}}</span>
+                    <span>{{sex}}</span>
+                    <span>{{age}}</span>
+                    <span>{{height}}</span>
+                </li>
+                {{/each}}
+            </ul>
+        </main>
+        <footer>
+            {{#each footer}}
+            <span>{{this}}</span> {{/each}}
+        </footer>
+    </script>
+</body>
+<script src="js/libs/require.js" data-main="js/app/main"></script>
+
+
+</html>

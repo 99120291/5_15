@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/libs/flexible.js"></script>
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <p>
+                <img src="imgs/mi.jpg" alt="">
+            </p>
+            <h6>
+                <input type="text" placeholder="搜索商品名称">
+            </h6>
+            <p>
+                <img src="imgs/yh.jpg" alt="">
+            </p>
+        </header>
+        <nav>
+            <div>
+                <ul id="list">
+
+                </ul>
+                <script type="text/x-handlebars-template" id="tmp_list">
+                    {{#each list}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </script>
+            </div>
+        </nav>
+        <main>
+            <div>
+                <div class="banner">
+                    <img src="imgs/banner.jpg" alt="">
+                </div>
+                <h2>每日精选</h2>
+                <div class="banner">
+                    <img src="imgs/banner.jpg" alt="">
+                </div>
+                <h2>每日精选</h2>
+                <div class="banner">
+                    <img src="imgs/banner.jpg" alt="">
+                </div>
+                <h2>每日精选</h2>
+                <div class="banner">
+                    <img src="imgs/banner.jpg" alt="">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <dl>
+                <dt class="icon iconfont icon-wifi"></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt class="icon iconfont icon-wifi"></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt class="icon iconfont icon-wifi"></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt class="icon iconfont icon-wifi"></dt>
+                <dd>首页</dd>
+            </dl>
+        </footer>
+    </div>
+</body>
+<script src="js/libs/require.js" data-main="js/main"></script>
+
+</html>
